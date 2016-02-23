@@ -1,0 +1,18 @@
+<h2>Edit Profile</h2>
+  <%= form_for @user do |f| %>
+    <div>
+    	<span>Username</span>
+    	<br>
+      <%= f.text_field :username, required: true %>
+    </div>
+    <div> 	
+    	<span>Email</span>
+    	<br>
+      <%= f.text_field :email, required: true %>
+    </div>
+    <%= f.submit "Save" %>
+  <% end %>
+
+  <h3>This will permanently delete your account!</h3>
+
+  <%= button_to "Delete", "/users/#{@user.id}", method: "delete" %>

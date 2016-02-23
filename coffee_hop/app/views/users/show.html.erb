@@ -1,3 +1,6 @@
 <div>
   Welcome, <%= @user.username %> 
 </div>
+
+<%= button_to "Logout", "/sessions", method: "delete" %>
+<%= button_to "Edit Profile", edit_user_path(@user), method: "get" %>

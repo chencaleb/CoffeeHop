@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   get "/sign_in", to: "sessions#new"
   post "/sessions", to: "sessions#create"
-
+  delete "/sessions", to: "sessions#destroy"
 
 end
