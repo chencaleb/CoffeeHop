@@ -13,6 +13,6 @@
     <%= f.submit "Save" %>
   <% end %>
 
-  <h3>This will permanently delete your account!</h3>
+  <h3>Delete Account</h3>
 
   <%= button_to "Delete", "/users/#{@user.id}", method: "delete" %>
