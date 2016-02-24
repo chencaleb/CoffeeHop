@@ -1,4 +1,17 @@
-<a href="/sign_in" id="link_to_signin">Already have an account?</a>
+<div id = 'title'>
+  <h1 id="coffeehop">C O F F E E     &nbsp;     H O P</h1>
+  <p id= "subtitle">H O W &nbsp;F U L L &nbsp;I S &nbsp;Y O U R &nbsp;F A V O R I T E &nbsp;C A F E ?</p>
+</div>
+
+<hr>
+
+<div id = "navbar">
+  <ul>
+    <li><a href="/" id="home">H O M E</a></li>
+    <li><a href="/home/about/" id="about">A B O U T</a></li>
+    <li><a href="/users/new/" id = "signup">S I G N U P</a></li>    
+  </ul>
+</div>
 
 <%= form_for @user do |f| %>
   <h1>New to Coffee Hop?</h1>
@@ -15,4 +28,7 @@
     <%= f.password_field :password_confirmation, placeholder: "Confirm password...", required: true %>
   </div>
   <%= f.submit "Sign Up",:class => "button" %>
+  <div>
+    <a href="/sign_in" id="link_to_signin">Already have an account?</a>
+  </div>
 <% end %> 
