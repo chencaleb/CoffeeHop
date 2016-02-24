@@ -13,3 +13,111 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background-color: #2A2A2A;
+}
+ /* for event links on home page*/
+li a:link{
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	color: white;
+	letter-spacing: -2px;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 60.399999px;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+/* visited links in nav*/
+li a:visited{
+	color: white;
+}
+
+/* hovering over links in nav*/
+li a:hover{
+	color: #B7B7B7;
+}
+
+#title{
+	font-family: 'Open Sans';
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+}
+
+#coffeehop {
+	font-size: 40px;
+}
+
+#subtitle{
+	clear: both;
+	font-family: 'Open Sans';
+	font-weight: lighter;	
+	color: #C6F3EA;
+}
+
+hr{
+	margin-bottom: -20px;
+	width: 90%;
+}
+
+/*---Navbar---*/
+#navbar{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+#navbar li{
+	display: inline-block;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+#home{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: lighter;		
+}
+
+#about{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: lighter;		
+}
+
+#signup {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+/*---University List---*/
+#university_list ul {
+	text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*----About Page----*/
+#about-text {
+    text-align: justify;
+	font-family: 'Open Sans';	
+	font-size: 14px;
+	font-weight: lighter;	
+	color: white;
+	width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 30px;
+	margin-top: -25px;
+}
