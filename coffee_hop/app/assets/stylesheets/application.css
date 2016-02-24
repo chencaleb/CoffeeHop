@@ -179,6 +179,18 @@ hr{
     padding: 0 20px 0 50px;
 }
 
+.new_user input#user_username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
+.new_user input#user_password_confirmation {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
 .new_user input#user_password:focus {
     background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
     background-size: 16px 80px;

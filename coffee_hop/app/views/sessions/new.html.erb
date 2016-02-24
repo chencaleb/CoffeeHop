@@ -1,12 +1,11 @@
-Sign In
 
 <%= form_for @user, url: "/sessions", method: "post" do |f| %>
-  <h1>Login</h1>
+  <h1>Log in to Coffee Hop</h1>
   <div>
     <%= f.text_field :email, placeholder: "Email..." %>
   </div>
   <div>
     <%= f.password_field :password, placeholder: "Password..." %>
   </div>
-  <%= f.submit "Sign In", :class => "button" %>
+  <%= f.submit "Log In", :class => "button" %>
 <% end %> 
