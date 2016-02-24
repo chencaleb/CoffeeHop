@@ -1,6 +1,7 @@
 <a href="/sign_in">Already have an account?</a>
 
 <%= form_for @user do |f| %>
+  <h1>Sign Up</h1>
   <div>
     <%= f.text_field :email, placeholder: "Email address...", required: true %>
   </div>
@@ -13,5 +14,5 @@
   <div>
     <%= f.password_field :password_confirmation, placeholder: "Confirm password...", required: true %>
   </div>
-  <%= f.submit "Sign Up" %>
+  <%= f.submit "Sign Up",:class => "button" %>
 <% end %> 
