@@ -3,5 +3,35 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   cities = City.create({ name: 'Chicago' }, { name: 'Copenhagen' })
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+university_list = 
+  "Berkeley",
+  "Los Angeles",
+  "San Diego",
+  "Davis",
+  "Irvine",
+  "Santa Barbara",
+  "Santa Cruz",
+  "Riverside",
+  "Merced"
+
+
+university_list.each do |name|
+  University.create(name: name)
+end
+
+cafe_list = 
+  "Blue Door",
+  "FSM",
+  "Milano",
+  "Philz",
+  "Strada",
+  "MLK"
+
+
+cafe_list.each do |name|
+  Coffeeshop.create(name: name)
+end

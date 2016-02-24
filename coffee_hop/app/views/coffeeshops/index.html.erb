@@ -1,0 +1,12 @@
+<h1> Cafes </h1>
+
+<div>
+There are currently <%= @coffeeshops.length %> cafes.
+</div>
+
+<% @coffeeshops.each do |shop| %>
+  <div>
+    <h3><%= shop.name %></h3>
+  </div>
+  <br>
+<% end %>

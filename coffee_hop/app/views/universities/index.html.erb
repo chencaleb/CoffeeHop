@@ -1,0 +1,12 @@
+<h1> Universities </h1>
+
+<div>
+There are currently <%= @universities.length %> universities.
+</div>
+
+<% @universities.each do |university| %>
+  <div>
+    <h3><%= university.name %></h3>
+  </div>
+  <br>
+<% end %>
