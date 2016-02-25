@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :users
   resources :universities
   resources :coffeeshops
+  resources :posts
 
   root "home#show", page: "home"
   get "/home/:page" => "home#show"

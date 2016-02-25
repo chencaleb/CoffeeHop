@@ -5,7 +5,7 @@ class UniversitiesController < ApplicationController
 	end
 
 	def show
-		@university = University.find(params[:id])
+		@universities = University.find(params[:id])
   		render :show
 	end
 end

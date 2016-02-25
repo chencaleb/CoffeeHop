@@ -6,7 +6,7 @@ class CoffeeshopsController < ApplicationController
 	end
 
 	def show
-  		@coffeshop = Coffeeshop.find(params[:id])
+  		@coffeeshop = Coffeeshop.find(params[:id])
   		render :show
   	end
 

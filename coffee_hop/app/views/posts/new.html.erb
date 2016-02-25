@@ -1,0 +1,23 @@
+<h1>Create New Post </h1>
+
+<%= form_for @post do |f| %>
+  <%= f.hidden_field :user_id, value: @current_user.id %>
+  <div>
+    <%= f.text_area :description, placeholder: "Add any extra info that might be helpful...", required: false %>
+  </div>
+  <div>
+    <%= f.radio_button :fullness, 0 %>
+    <%=label_tag(:fullness, "0%") %>
+    <%= f.radio_button :fullness, 20 %>
+    <%=label_tag(:fullness, "20%") %>
+    <%= f.radio_button :fullness, 40 %>
+    <%=label_tag(:fullness, "40%") %>
+    <%= f.radio_button :fullness, 60 %>
+    <%=label_tag(:fullness, "60%") %>
+    <%= f.radio_button :fullness, 80 %>
+    <%=label_tag(:fullness, "80%") %>
+    <%= f.radio_button :fullness, 100 %>
+    <%=label_tag(:fullness, "100%") %>
+  </div>
+  <%= f.submit "Post",:class => "post_button" %>
+<% end %> 

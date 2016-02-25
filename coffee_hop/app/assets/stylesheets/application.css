@@ -16,6 +16,7 @@
 
 body {
 	background-color: #2A2A2A;
+    color: white;
 }
  /* for event links on home page*/
 li a:link{
@@ -220,5 +221,4 @@ hr{
 .button:hover {
     background: #ff7b81;
 }
-
 

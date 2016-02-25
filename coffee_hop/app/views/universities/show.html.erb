@@ -1,0 +1,6 @@
+<% @universities.coffeeshops.each do |cafe| %>
+  <div>
+    <h3><%= link_to cafe.name, coffeeshop_path(cafe) %></h3>
+  </div>
+  <br>
+<% end %>
