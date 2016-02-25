@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
   delete "/sessions", to: "sessions#destroy"
 
+  get "*path", to: "home#show", page: "home"
+
 end
