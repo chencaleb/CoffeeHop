@@ -29,7 +29,15 @@ cafe_list =
   ["Milano", 1],
   ["Philz", 1],
   ["Strada", 1],
-  ["MLK", 1]
+  ["MLK", 1],
+  ["Kerckhoff", 2],
+  ["Untitled", 2],
+  ["SEAS", 2],
+  ["Northern Lights", 2],
+  ["Hammer", 2],
+  ["Novel", 2]
+
+
 
 
 cafe_list.each do |name, university|

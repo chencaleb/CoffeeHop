@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
 	  def create
 	  	@post = Post.create(post_params)
-	  	redirect_to "/posts/#{@post.id}"
+	  	redirect_to "/coffeeshops/#{@post.coffeeshop_id}"
 	  end
 
 	  def show
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
 
 private
 	def post_params
-		params.require(:post).permit(:description, :fullness, :user_id)
+		params.require(:post).permit(:description, :fullness, :user_id, :coffeeshop_id)
 	end
 
 end
