@@ -1,9 +1,9 @@
-<div>
-  Welcome, <%= @user.username %> 
+<div class="welcome">
+  Welcome to Coffee Hop, <%= @user.username %>! 
 </div>
 
-<%= button_to "Logout", "/sessions", method: "delete" %>
+<%= button_to "Logout", "/sessions", method: "delete", class: "logout_btn" %>
 
 <% if current_user == @user%>
-	<%= button_to "Edit Profile", edit_user_path(@user), method: "get" %>
+	<%= button_to "Edit Profile", edit_user_path(@user), method: "get", class: "logout_btn" %>
 <% end %>
