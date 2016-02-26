@@ -25,6 +25,7 @@ body {
     position: relative;
     left: 10px;
     top: 10px;
+    -webkit-filter: invert(100%);
 }
 
  /* for event links on home page*/
