@@ -26,6 +26,7 @@ To be uploaded (currently on paper)
 ### Installation ###
 
 Deployed to Heroku
+https://fathomless-eyrie-73089.herokuapp.com/
 
 ## Unsolved Problems ##
 
