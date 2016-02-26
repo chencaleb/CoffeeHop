@@ -55,13 +55,18 @@ li a:hover{
 }
 
 #title{
-	font-family: 'Open Sans';
+	font-family: 'Futura';
+    font-weight: bold;
 	width: 400px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
 	margin-top: 10px;
 	color: white;
+}
+
+#title h1 {
+    letter-spacing: -3px;
 }
 
 #coffeehop {
