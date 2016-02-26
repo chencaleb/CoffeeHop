@@ -44,13 +44,13 @@ cafe_list.each do |name, university|
   Coffeeshop.create(name: name, university_id: university)
 end
 
-user_list = 
-  ["clb_chen@yahoo.com", "calebchen", "password"],
-  ["jessie@gmail.com", "jessiehong", "password"]
+# user_list = 
+#   ["clb_chen@yahoo.com", "calebchen", "password"],
+#   ["jessie@gmail.com", "jessiehong", "password"]
 
-user_list.each do |email, username, password|
-  User.create(email: email, username: username, password_digest: password)
-end
+# user_list.each do |email, username, password|
+#   User.create(email: email, username: username, password_digest: password)
+# end
 
 
 

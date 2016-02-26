@@ -3,10 +3,11 @@
 <div>
   <%= @coffeeshop.name %> 
 </div>
-<!-- 
-<div>
-    <a href="/posts/new" id="newpost">Create Post</a>
- </div> -->
+<div class="bar_container">
+    <div class="bar_mortice rounded">
+      <div class="progress rounded" style="width: <%= @avg_fullness.to_s %>%;"></div>
+    </div>
+</div>
 
  <h1>Create New Post </h1>
 
@@ -37,6 +38,6 @@
 	<br>
 	<%= p.description %>
 	<br>
-	<%= p.user.username %>
+	<%= p.fullness %>
 	<br>
 <% end %>
