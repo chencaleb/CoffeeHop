@@ -22,7 +22,7 @@
     <%= f.password_field :password, placeholder: "Password..." %>
   </div>
   <%= f.submit "Log In", :class => "button" %>
-  <div>
-    <a href="/users/new" id="link_to_signup">Register</a>
+  <div class="register_signin">
+    <%= link_to "Register", "/users/new" %>
   </div>
 <% end %>

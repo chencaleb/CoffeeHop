@@ -1,5 +1,20 @@
+<div id = 'title'>
+	<h1 id="coffeehop">C O F F E E     &nbsp;     H O P</h1>
+	<p id= "subtitle">H O W &nbsp;F U L L &nbsp;I S &nbsp;Y O U R &nbsp;F A V O R I T E &nbsp;C A F E ?</p>
+</div>
+
+<hr>
+
+<div id = "navbar">
+	<ul>
+		<li><a href="/" id="home">H O M E</a></li>
+		<li><a href="/home/about/" id="about">A B O U T</a></li>
+		<li><a href="/users/new/" id = "signup">S I G N U P</a></li>		
+	</ul>
+</div>
+
 <% @universities.coffeeshops.each do |cafe| %>
-  <div>
+  <div class = "university_box">
     <h3><%= link_to cafe.name, coffeeshop_path(cafe) %></h3>
   </div>
   <br>

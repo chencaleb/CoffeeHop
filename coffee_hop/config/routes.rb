@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :coffeeshops
   resources :posts
 
-  root "home#show", page: "home"
+  root to: "universities#index"
   get "/home/:page" => "home#show"
 
   get "/sign_in", to: "sessions#new"

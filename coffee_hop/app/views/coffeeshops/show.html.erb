@@ -1,43 +1,40 @@
-<h1>Welcome to...</h1>
+<h1 id="coffee_header">welcome &nbsp; to &nbsp; <%= @coffeeshop.name %> </h1>
 
-<div>
-  <%= @coffeeshop.name %> 
-</div>
+<h3 id="rate"> Rate the fullness of the cafe! </h3>
+
 <div class="bar_container">
     <div class="bar_mortice rounded">
       <div class="progress rounded" style="width: <%= @avg_fullness.to_s %>%;"></div>
     </div>
+
+    <hr id="divider">
+
+    <%= form_for @post do |f| %>
+      <%= f.hidden_field :user_id, value: current_user.id %>
+      <%= f.hidden_field :coffeeshop_id, value: @coffeeshop.id %>
+      <div id="radio_fullness">
+        <%= f.radio_button :fullness, 0 %>
+        <%=label_tag(:fullness, "0%") %>
+        <%= f.radio_button :fullness, 20 %>
+        <%=label_tag(:fullness, "20%") %>
+        <%= f.radio_button :fullness, 40 %>
+        <%=label_tag(:fullness, "40%") %>
+        <%= f.radio_button :fullness, 60 %>
+        <%=label_tag(:fullness, "60%") %>
+        <%= f.radio_button :fullness, 80 %>
+        <%=label_tag(:fullness, "80%") %>
+        <%= f.radio_button :fullness, 100 %>
+        <%=label_tag(:fullness, "100%") %>
+      </div>
+      <div>
+        <%= f.text_area :description, placeholder: "Add any extra info that might be helpful...", required: false %>
+      </div>
+      <%= f.submit "Post",:class => "post_button" %>
+    <% end %> 
 </div>
 
- <h1>Create New Post </h1>
-
-<%= form_for @post do |f| %>
-  <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.hidden_field :coffeeshop_id, value: @coffeeshop.id %>
-  <div>
-    <%= f.text_area :description, placeholder: "Add any extra info that might be helpful...", required: false %>
-  </div>
-  <div>
-    <%= f.radio_button :fullness, 0 %>
-    <%=label_tag(:fullness, "0%") %>
-    <%= f.radio_button :fullness, 20 %>
-    <%=label_tag(:fullness, "20%") %>
-    <%= f.radio_button :fullness, 40 %>
-    <%=label_tag(:fullness, "40%") %>
-    <%= f.radio_button :fullness, 60 %>
-    <%=label_tag(:fullness, "60%") %>
-    <%= f.radio_button :fullness, 80 %>
-    <%=label_tag(:fullness, "80%") %>
-    <%= f.radio_button :fullness, 100 %>
-    <%=label_tag(:fullness, "100%") %>
-  </div>
-  <%= f.submit "Post",:class => "post_button" %>
-<% end %> 
-
 <% @coffeeshop.posts.each do |p| %>
-	<br>
-	<%= p.description %>
-	<br>
-	<%= p.fullness %>
-	<br>
+  <div class="description">
+	  <%= p.description %>
+  </div>
 <% end %>

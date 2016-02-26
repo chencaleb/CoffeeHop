@@ -28,7 +28,7 @@
     <%= f.password_field :password_confirmation, placeholder: "Confirm password...", required: true %>
   </div>
   <%= f.submit "Sign Up",:class => "button" %>
-  <div>
-    <a href="/sign_in" id="link_to_signin">Already have an account?</a>
+  <div class="register_signin">
+    <%= link_to "Already have an account?", "/sign_in" %>
   </div>
 <% end %> 

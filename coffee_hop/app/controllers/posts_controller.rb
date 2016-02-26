@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 
 	  def create
 	  	@post = Post.create(post_params)
+	  	@fullness = @post.fullness
 	  	redirect_to "/coffeeshops/#{@post.coffeeshop_id}"
 	  end
 

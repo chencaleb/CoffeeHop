@@ -15,6 +15,6 @@ class CoffeeshopsController < ApplicationController
 	private
 	def fullness(posts)
 		avg_fullnesses = posts.map { |post| post.fullness }
-		avg_fullnesses.reduce(:+) / avg_fullnesses.size
+		avg_fullnesses.reduce(:+).to_f / avg_fullnesses.size
 	end
 end
