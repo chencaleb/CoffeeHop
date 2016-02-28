@@ -482,9 +482,7 @@ hr{
 
 }
 
-.delete_button {
-    width: 15%;
-    height: 40%;
+.save_button {
     background: #99B8DB;
     box-sizing: border-box;
     border-radius: 5px;
@@ -497,6 +495,33 @@ hr{
     outline: none;
     cursor: pointer;
     text-align: center;
-    margin: 5px;
 }
 
+.edit_form_style input {
+    width: 20%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+}
+
+.edit_form_style input#user_email {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
+.edit_form_style input#user_username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
+h5 {
+    font-family: "Open Sans";
+    text-align: center;
+}
