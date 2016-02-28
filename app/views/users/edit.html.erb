@@ -1,4 +1,4 @@
-<h2>Edit Profile</h2>
+<h2 class="edit_title">Edit Profile</h2>
   <%= form_for @user do |f| %>
     <div>
     	<span>Username</span>
@@ -10,9 +10,9 @@
     	<br>
       <%= f.text_field :email, required: true %>
     </div>
-    <%= f.submit "Save" %>
+    <%= f.submit "Save", class:"delete_button" %>
   <% end %>
 
-  <h3>Delete Account</h3>
+  <h3 class="delete_account">Delete Account</h3>
 
   <%= button_to "Delete", "/users/#{@user.id}", method: "delete" %>
