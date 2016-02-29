@@ -33,7 +33,7 @@
     <% end %> 
 </div>
 
-<% @coffeeshop.posts.each do |p| %>
+<% @coffeeshop.posts.order(:created_at).reverse.each do |p| %>
   <div class="description">
 	  <%= p.description %>
   </div>

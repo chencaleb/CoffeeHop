@@ -1,3 +1,38 @@
 // Place all the styles related to the universities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*---- Home/University Page ----*/
+
+#university_list {
+    text-align: center;
+}
+
+.university_box {
+    border: 2px solid white;
+    width: 300px;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    color: #71C6B5;
+    font-weight: bold;
+}
+
+.university_box a:link{
+    color: #ECFDFA;
+    letter-spacing: -1px;
+    font-size: 40px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.university_box a:visited{
+    color: #C6F3EA;
+}
+
+.university_box a:hover{
+    color: #B7B7B7;
+}

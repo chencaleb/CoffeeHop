@@ -1,3 +1,143 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*---- User Pages ----*/
+.user_list {
+    text-align: center;
+}
+
+.profile_link {
+    font-family: "Open Sans";
+    color: white;
+}
+
+.profile_link a:link{
+    color: #ECFDFA;
+  /*  letter-spacing: -1px;
+    font-size: 40px;*/
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.profile_link a:visited{
+    color: #C6F3EA;
+}
+
+.profile_link a:hover{
+    color: #B7B7B7;
+}
+
+#user_num {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 25px;
+}
+
+/*---- User Show Page ----*/
+
+.logout_btn {
+    width: 15%;
+    height: 40%;
+    background: #99B8DB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+.logout_btn:hover {
+    background: gray;
+}
+
+.welcome {
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin: 5px;
+}
+
+/*---- User Edit Page ----*/
+
+.edit_form_style {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #AD8C6B;
+    margin: 0 auto;
+}
+
+.edit_form_style h1 {
+    font-weight: lighter;   
+    font-family: Montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.save_button {
+    background: #99B8DB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.save_button:hover {
+    background: #B6C1CE;
+}
+
+.edit_form_style input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+}
+
+.edit_form_style input#user_email {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
+.edit_form_style input#user_username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    padding: 0 20px 0 50px;
+}
+
+h5 {
+    font-family: "Open Sans";
+    text-align: left;
+    color: black;
+}
+
+.delete_account {
+    text-align: center;
+    font-family: Montserrat;
+}

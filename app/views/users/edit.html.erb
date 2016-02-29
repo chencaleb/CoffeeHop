@@ -1,13 +1,11 @@
-<h2 class="edit_title">Edit Profile</h2>
-  <%= form_for @user, :html => {:class => "edit_form_style"} do |f| %>
+<%= form_for @user, :html => {:class => "edit_form_style"} do |f| %>
+    <h1> Edit Profile </h1>
     <div>
     	<h5>Username</h5>
-    	<br>
       <%= f.text_field :username, required: true %>
     </div>
     <div> 	
     	<h5>Email</h5>
-    	<br>
       <%= f.text_field :email, required: true %>
     </div>
     <%= f.submit "Save", class:"save_button" %>
