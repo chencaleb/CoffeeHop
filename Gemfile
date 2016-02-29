@@ -26,6 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#Include rails_12factor gem to enable all platform features
+gem 'rails_12factor'
+
+#To set ruby version, add ruby '2.2.4'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
