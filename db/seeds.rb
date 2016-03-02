@@ -44,5 +44,8 @@ end
 #   User.create(email: email, username: username, password_digest: password)
 # end
 
+User.create(email: "caleb@gmail.com", password: "password", username: "caleb")
+
+Post.create(fullness: 60, description: "askjdnajksdnsa", coffeeshop_id: 1, user_id: 1)
 
 
