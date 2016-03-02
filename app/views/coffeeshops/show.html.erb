@@ -1,6 +1,18 @@
 <h1 id="coffee_header">welcome &nbsp; to &nbsp; <%= @coffeeshop.name %> </h1>
 
-<h3 id="rate"> Based on <%=@coffeeshop.posts.count %> reviews, <%= @coffeeshop.name %> is currently <%=@avg_fullness.round %>% full! </h3>
+<h3 id="rate"> Based on 
+<% if @coffeeshop.posts.count  %> 
+  <%= @coffeeshop.posts.count %>
+<% else %>
+ 0
+ <% end %>
+reviews, <%= @coffeeshop.name %> is currently 
+<% if @avg_fullness.round  %> 
+  <%= @avg_fullness.round %>%
+<% else %>
+ 0%
+ <% end %>
+full! </h3>
 
 <div class="bar_container">
     <div class="bar_mortice rounded">
@@ -35,6 +47,9 @@
 
 <% @coffeeshop.posts.order(:created_at).reverse.each do |p| %>
   <div class="description">
-	  <%= p.description %>
+    <%= p.created_at.strftime("%d %b. %Y") %>
+    <br>
+    <%= p.fullness %>%
+    <%= p.description %>
   </div>
 <% end %>
