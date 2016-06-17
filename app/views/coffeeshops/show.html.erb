@@ -42,6 +42,7 @@ full! </h3>
         <%= f.text_area :description, placeholder: "Add any extra info that might be helpful...", required: false %>
       </div>
       <%= f.submit "Post",:class => "post_button" %>
+      <%= link_to '<button type="button" class="post_button">Back</button>'.html_safe, root_path %>
     <% end %> 
 </div>
 

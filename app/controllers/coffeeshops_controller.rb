@@ -8,7 +8,8 @@ class CoffeeshopsController < ApplicationController
 	def show
 		@coffeeshop = Coffeeshop.find(params[:id])
 		@post = Post.new
-		@avg_fullness = fullness(@coffeeshop.posts) || 0
+		@avg_fullness = 0 || fullness(@coffeeshop.posts)
+		# byebug
 	end
 
 	private

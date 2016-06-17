@@ -23,9 +23,11 @@ body {
     width: 48px;
     height: 48px;
     position: relative;
-    left: 10px;
-    top: 10px;
-    -webkit-filter: invert(100%);
+    /*left: 10px;*/
+    top: 7px;
+    right: 5px;
+   /* -webkit-filter: invert(100%);*/
+
 }
 
  /* for event links on home page*/
